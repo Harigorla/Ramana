@@ -1,0 +1,20 @@
+<head>
+    <title>StudentApply</title>
+    <style>
+        form{
+            background-color: blueviolet;
+            padding: 110px 150px;
+            margin: 50px 79px;
+            border-radius: 50px;
+            font-size: large;
+            font-family: "Arial Black";
+        }
+    </style>
+</head>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ aform.as_p }}
+
+    <input type="submit" value="Apply">
+</form>

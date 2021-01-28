@@ -1,0 +1,8 @@
+<h3>Education Details:</h3>
+{% if education %}
+    {% for each in education %}
+        You have done your {{ each.type }} from {{ each.name }}, {{ each.location }} with {{ each.marks }}<br>
+    {% endfor %}
+{% else %}
+    <h6>No Education details provided</h6>
+{% endif %}

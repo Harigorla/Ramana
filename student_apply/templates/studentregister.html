@@ -1,0 +1,19 @@
+<head>
+    <title>StudentRegister</title>
+    <style>
+        form{
+            background-color: cornflowerblue;
+            padding: 70px 95px;
+            margin: 50px 80px;
+            border-radius: 50px;
+            font-style: italic;
+            font-family:"Arial Black" ;
+        }
+    </style>
+</head>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ rform.as_p }}
+    <input type="submit" value="Register">
+</form>

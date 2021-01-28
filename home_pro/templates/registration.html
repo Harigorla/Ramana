@@ -1,0 +1,18 @@
+<head>
+    <title>Registration</title>
+    <style>
+        form {
+            background-color: aqua;
+            padding: 40px 85px;
+            margin: 85px 120px;
+        }
+    </style>
+</head>
+
+<center>
+    <form method="post">
+        {% csrf_token %}
+        {{ rform.as_p }}
+        <input style="background-color: red" type="submit" value="Log_In">
+    </form>
+</center>

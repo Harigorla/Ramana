@@ -1,0 +1,23 @@
+<head>
+    <title>Student Application</title>
+    <style>
+        form {
+            background-color: aqua;
+            padding: 50px 60px;
+            margin: 40px 60px;
+            border-radius: 50px;
+            font-family: "Arial Black";
+        }
+        h1{
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<center>
+    <form method="post" enctype="multipart/form-data">
+        <h1 style="background-color: darkcyan">Student Register Aplication</h1>
+        {% csrf_token %}
+        {{ sform.as_p }}
+        <input type="submit" value="Apply">
+    </form>
+</center>

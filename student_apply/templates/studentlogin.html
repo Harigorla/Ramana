@@ -1,0 +1,19 @@
+<head>
+    <title>StudentLogin</title>
+    <style>
+        form{
+            background-color: deeppink;
+            padding: 75px 96px;
+            margin: 90px 120px;
+            border-radius: 80px;
+            font-family: "Arial Black";
+        }
+    </style>
+</head>
+
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ lform.as_p }}
+    <input type="submit" value="loggin">
+
+</form>

@@ -1,0 +1,31 @@
+{#<h1>{{ student_list }}</h1>#}
+{##}
+{#<li>#}
+{#    {{ student_list.firstname }}#}
+{#    {{ student_list.lastname }}#}
+{#    {{ student_list.phone }}#}
+{#    {{ student_list.password }}#}
+{#    {{ student_list.email }}#}
+{#    {{ student_list.pic }}#}
+{#    {{ student_list.ssc }}#}
+{#    {{ student_list.inter }}#}
+{#    {{ student_list.birthdate }}#}
+{#</li>#}
+{##}
+{#<img src="{{ student_list.pic.url }}" alt="connect" style="...">#}
+
+<h1>{{ student_list }}</h1>
+{% for student in student_list %}
+
+        {{ student.firstname }}
+        {{ student.lastname }}
+        {{ student.phone }}
+        {{ student.password }}
+        {{ student.email }}
+        {{ student.pic }}
+        {{ student.ssc }}
+        {{ student.inter }}
+        {{ student.birthdate }}
+
+{% endfor %}
+<img src="{{ items.pic.url}}" alt="connect" style="max-height:300px">
